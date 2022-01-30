@@ -64,7 +64,6 @@ while game:
     # if you lose, you lose
     if calcs(option_a, option_b, user_selection) == "lose":
         print("You LOSE!")
-        print(f" SCORE: {score}")
         game = False
         if user_selection == "a":
             loser = option_a
@@ -72,6 +71,7 @@ while game:
         if user_selection == "b":
             winner = option_a 
             loser = option_b
+
     # print the follower counts and the score
-    print(f"{winner['name']}: {winner['follower_count']}: {loser['name']}: {loser['follower_count']}: ")
     print(f" SCORE: {score}")
+    print(f"{winner['name']}: {winner['follower_count']}: {loser['name']}: {loser['follower_count']} ")
