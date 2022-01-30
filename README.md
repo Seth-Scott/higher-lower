@@ -22,11 +22,11 @@
   <p align="center">
     A simple command line higher/lower game
     <br />
-    <a href="https://github.com/Seth-Scott/blackjack"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/Seth-Scott/higher-lower"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     ·
-    <a href="https://github.com/Seth-Scott/blackjack/issues">Report Bug</a>
+    <a href="https://github.com/Seth-Scott/higher-lower/issues">Report Bug</a>
     ·
 
   </p>
