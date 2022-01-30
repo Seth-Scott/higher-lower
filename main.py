@@ -7,11 +7,11 @@ def calcs(a, b, a_or_b):
     a_followers = a["follower_count"]
     b_followers = b["follower_count"]
     if a_followers > b_followers and a_or_b == "a":
-        return "win"
+        return True
     elif b_followers > a_followers and a_or_b == "b":
-        return "win"
+        return True
     else:
-        return "lose"
+        return False
 
 # function that randomly selects an item from game_data (dictionary nested in a list)
 def randomizer():
@@ -51,7 +51,7 @@ while game:
     user_selection = input("Who has more followers? 'a' or 'b'? ").lower()
 
     # if you win, increase the score, set option 'a' to the previous round's winner.
-    if calcs(option_a, option_b, user_selection) == "win":
+    if calcs(option_a, option_b, user_selection) == True:
         score += 1
         first_round = False
         if user_selection == "a":
@@ -62,7 +62,7 @@ while game:
             winner = option_b 
 
     # if you lose, you lose
-    if calcs(option_a, option_b, user_selection) == "lose":
+    if calcs(option_a, option_b, user_selection) == False:
         print("You LOSE!")
         game = False
         if user_selection == "a":
